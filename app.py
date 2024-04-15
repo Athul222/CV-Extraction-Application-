@@ -7,7 +7,7 @@ import logic
 ALLOWED_EXTENSIONS = {"pdf", "doc", "docx"}
 
 app = Flask(__name__)
-app.config["UPLOAD_FOLDER"] = "OST-Assignment/uploaded_files"
+app.config["UPLOAD_FOLDER"] = "uploaded_files"
 
 @app.route("/")
 def home():
@@ -37,7 +37,7 @@ def upload_file():
 
 @app.route("/download")
 def download_file():
-    output_file = os.path.abspath("OST-Assignment/output.xls")
+    output_file = os.path.abspath("output.xls")
     return send_file(output_file, as_attachment=True)
 
 if __name__ == "__main__":
