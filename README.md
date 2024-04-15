@@ -31,7 +31,7 @@ A simple User Interface is provided to the user which has a upload and a downloa
 
 2. **Clone the repository:**
     ```bash
-    git clone ...
+    git clone https://github.com/Athul222/CV-Extraction-Application-.git
     ```
 
 3. **Install Dependencis:**
